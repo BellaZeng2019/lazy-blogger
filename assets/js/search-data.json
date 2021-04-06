@@ -4,9 +4,9 @@
         "post0": {
             "title": "The Piano Classifier",
             "content": ". # !pip install torchtext==0.8.1 # import fastbook # fastbook.setup_book() # from fastbook import * from fastai.vision.all import * from fastai.vision.widgets import * . path=Path() learn_inf = load_learner(path/&#39;export.pkl&#39;, cpu=True) btn_upload = widgets.FileUpload() out_pl = widgets.Output() lbl_pred = widgets.Label() . def on_click(change): img = PILImage.create(btn_upload.data[-1]) out_pl.clear_output() with out_pl: display(img.to_thumb(128,128)) pred,pred_idx, probs = learn_inf.predict(img) lbl_pred.value=f&#39;Prediction: {pred}; Probability: {probs[pred_idx]: 0.04f}&#39; . btn_upload.observe(on_click, names=[&#39;data&#39;]) . display(VBox([widgets.Label(&#39;Select your piano&#39;), btn_upload, out_pl, lbl_pred])) .",
-            "url": "https://bellazeng2019.github.io/lazy-blogger/2021/04/05/pianoclassifier_prod.html",
-            "relUrl": "/2021/04/05/pianoclassifier_prod.html",
-            "date": " • Apr 5, 2021"
+            "url": "https://bellazeng2019.github.io/lazy-blogger/2021/04/06/pianoclassifier.html",
+            "relUrl": "/2021/04/06/pianoclassifier.html",
+            "date": " • Apr 6, 2021"
         }
         
     
